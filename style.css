@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color : #505962;
+}
+.navbar{
+  background: rgba(0,0,0,0.8);
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background-color: rgba(0,0,0,0.6)!important;
+}
+.navbar-brand img{
+  height: 2.5rem;
+}
+.navbar-nav li{
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: antiquewhite;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #146dc4;
+}
+
+.video-background{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.2); 
+}
+.caption {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  color: white;
+}
+.caption h1{
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding: 1rem;
+}
+.caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+/*
+.caption img{
+  box-shadow: cadetblue;
+  border-style: solid;
+  border-radius: 6rem;
+}
+.caption img:hover{
+  background-size: 150%;
+
+}
+*/
+.pp{
+  height: 280px;
+  width: 280px;
+  border-radius: 200px 200px 200px 200px; 
+  border-style: solid;
+  border-width: 0px;
+  border-color: ivory;
+  background: url(images/pp2.png);
+  background-size: 100%;
+  background-position: center;
+  transition: 1s;
+  padding: 45px;
+}
+.pp:hover{
+  background-size: 125%;
+  background-position: center;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0.4;
+  font-size: 1.1rem;
+  padding: .6rem 1.3rem;
+}
+table{
+  /*margin: 0 100px 0 100px;*/
+  text-align: left;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* checkpoint */
+.words, .words::before .words::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 60px;
+  font-weight: 500;
+}
+/* checkpoint */
+.words {
+  box-sizing: content-box;
+  background-color: #ffffff;
+  height: 25px;
+  padding: 20px 5px;
+  display: grid;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+span{
+  font-size: 60px;
+  display: block;
+  height: 100%;
+  padding-left: 5px;
+  color: #0e6ffc;
+  animation: spin_words 10s infinite;
+}
+@keyframes spin_words{
+  0%{
+      transform: translateY(-40%);
+  }
+  15%{
+      transform: translateY(-140%);
+  }
+  30%{
+      transform: translateY(-240%);
+  }
+  45%{
+      transform: translateY(-340%);
+  }
+  60%{
+      transform: translateY(-440%);
+  }
+  75%{
+      transform: translateY(-540%);
+  }
+  88%{
+      transform: translateY(-640%);
+  }
+  100%{
+      transform: translateY(-740%);
+  }
+}
+/*============= COURSE SECTION =============*/
+
+.col-md-8 {
+  margin: 2rem auto 1rem;
+  padding-top: 1rem;
+}
+.col-md-8 h1 {
+    font-size: 2.4rem;
+  }
+  .col-md-5{
+    display: grid;
+  }
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #1EBBA3;
+  background-color: #1EBBA3;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+}
+
+@media (max-width: 768px){
+  .caption h1{
+    font-size: 1.4rem;
+    letter-spacing: .15rem;
+    padding: .5rem;
+  }
+  .caption h3{
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
+  .col-md-8 h1 {
+    font-size: 1.7rem;
+  }
+}
+
+.col-md-8 hr{
+  width: 250px;
+  border-top: 3px solid #146dc4;
+}
+/*bar*/
+.wrapper2{
+  width: 40%;
+  min-width: 400px;
+  position: relative;
+  transform: translate(-60%,-0%);
+  left: 50%;
+  top: 25%;
+}
+.container2{
+  width: 100%;
+  padding: 50px 30px;
+  background-color: rgba(255,255,255,0.06);
+  border: 2px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+.shape-1{
+  height: 220px;
+  width: 220px;
+  background: linear-gradient(
+    #3da5e0,
+    #325ea5
+  );
+  border-radius: 50%;
+  position: absolute;
+  bottom: -100px;
+  left: -80px;
+  z-index: -1;
+}
+.shape-2{
+  height: 180px;
+  width: 180px;
+  background: linear-gradient(
+      #3da5e0,
+      #325ea5
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  z-index: -1;
+}
+h2{
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+.skills:not(:last-child){
+  margin-bottom: 30px;
+}
+.details{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar{
+  position: relative;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 7px 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+.bar div{
+  position: relative;
+  width: 0;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #badefc;
+  border: 1px solid #1c97fc;
+  box-shadow: 0 0 5px rgba(28,151,252,0.6);
+}
+/*
+#html-bar{
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+  100%{
+      width: 15%;
+  }
+}
+#css-bar{
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+  100%{
+      width: 10%;
+  }
+}
+#js-bar{
+  animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+  100%{
+      width: 5%;
+  }
+}
+#jQuery-bar{
+  animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+  100%{
+      width: 85%;
+  }
+}
+*/
+/* start bar scroll */
+/*@-webkit-keyframes animate-positive{
+  0% { width: 0%; }
+}
+@keyframes animate-positive{
+  0% { width: 0%; }
+}
+*/
+.bg-portofolio {
+  background-image: url(images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -5;
+  min-height: 750px;
+}
+.html-bar{
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+  100%{
+      width: 15%;
+  }
+}
+.css-bar{
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+  100%{
+      width: 10%;
+  }
+}
+.js-bar{
+  animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+  100%{
+      width: 5%;
+  }
+}
+.jQuery-bar{
+  animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+  100%{
+      width: 85%;
+  }
+}
+
+/*end bar scrolllllllllll */
+.about h1{
+  text-align: center;
+}
+.about2{
+  text-align: left;
+  padding-top: 10px;
+  place-items: start;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.about{
+  padding-top: 25px;
+}
+.about hr{
+  width: 250px;
+  border-top: 4px solid #146dc4;
+}
+.grid2 {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 40px;
+  align-items: center;
+  
+}
+.grid2 > article{
+  background: transparent;
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(167, 167, 167, 0.89);
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  backdrop-filter: blur(10px);
+  transition: transform .3s;
+}
+.grid2 > article:hover{
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 26px 0px rgba(255, 255, 255, 0.945);
+}
+.grid2 > article img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.text{
+  margin-top: 10px;
+  padding: 0 20px 20px;
+  color: aliceblue;
+}
+.text h4{
+  font-size: 20px;
+}
+.text hr{
+  width: 50px;
+  border-top: 3px solid #ffffff;
+}
+.portofolio h1{
+  padding-top: 15px;
+}
+.ok{
+  width: 250px;
+  border-top: 4px solid #146dc4;
+}
+.offset {
+  background-color: #40474e;
+  color:white;
+  padding: 1rem 0 1rem;
+  margin-top: 1rem;;
+}
+.offset img {
+  height: 3rem;
+  margin: 1.5rem;
+}
+.offset a{
+  list-style: none;
+  margin: 10px 30px;
+  display: inline-block;
+  font-size: 2px;
+  padding: 20px 20px;
+  color:rgba(255, 255, 255, 0.945);
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  transition: .5s;
+}
+.offset a:hover{
+  color: #3da5e0;
+  border: 1px;
+}
+.offset i{
+  size: 20px;
+}
+/* last bar*/
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
