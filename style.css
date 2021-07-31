@@ -430,13 +430,12 @@ h2{
 }
 .offset a{
   list-style: none;
-  margin: 10px 30px;
+  margin: 3px 3px;
   display: inline-block;
-  font-size: 2px;
-  padding: 20px 20px;
+  font-size: 20px;
+  padding: 5px 5px;
   color:rgba(255, 255, 255, 0.945);
-  border: 1px solid #ffffff;
-  border-radius: 50%;
+  border-radius: 100%;
   transition: .5s;
 }
 .offset a:hover{
@@ -444,12 +443,9 @@ h2{
   border: 1px;
 }
 .offset i{
-  size: 20px;
+  size: 200px;
 }
-.test {
-  background-color: #189582;
-  min-height: 300px;
-}
+
 /* last bar*/
 /*============ BOOTSTRAP BREAK POINTS:
 
