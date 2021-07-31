@@ -446,6 +446,10 @@ h2{
 .offset i{
   size: 20px;
 }
+.test {
+  color: #189582;
+  min-height: 300px;
+}
 /* last bar*/
 /*============ BOOTSTRAP BREAK POINTS:
 
