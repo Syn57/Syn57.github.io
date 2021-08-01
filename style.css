@@ -177,7 +177,12 @@ span{
   background-color: #189582;
   color: white;
 }
-
+.hello {
+  font-size: 50px;
+}
+.hello2 {
+  font-size: 50px;
+}
 @media (max-width: 768px){
   .caption h1{
     font-size: 1.4rem;
@@ -189,11 +194,86 @@ span{
     padding-bottom: 1.2rem;
   }
   .btn-lg {
-    font-size: 1rem;
-    padding: .5rem 1rem;
+    font-size: .8rem;
+    padding: .3rem .8rem;
   }
+  /*.btn-lg {
+    font-size: 1.1rem;
+    padding: .6rem 1.3rem;
+  }*/
   .col-md-8 h1 {
     font-size: 1.7rem;
+  }
+  .pp{
+    height: 140px;
+    width: 140px;
+    border-radius: 100px 100px 100px 100px; 
+    border-style: solid;
+    border-width: 0px;
+    border-color: ivory;
+    background: url(images/pp2.png);
+    background-size: 100%;
+    background-position: center;
+    transition: 1s;
+    padding: 45px;
+  }
+  span{
+    font-size: 30px;
+    display: block;
+    height: 50%;
+    padding-left: 2.5px;
+    color: #0e6ffc;
+    animation: spin_words 10s infinite;
+  }
+  .words, .words::before .words::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 250;
+  }
+  /* checkpoint */
+  .words {
+    box-sizing: content-box;
+    background-color: #ffffff;
+    height: 12.5px;
+    padding: 10px 2.5px;
+    display: grid;
+    border-radius: 4px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  .hello {
+    font-size: 25px;
+  }
+  .hello2 {
+    font-size: 25px;
+  }
+  @keyframes spin_words{
+    0%{
+        transform: translateY(-60%);
+    }
+    15%{
+        transform: translateY(-265%);
+    }
+    30%{
+        transform: translateY(-465%);
+    }
+    44%{
+        transform: translateY(-655%);
+    }
+    58%{
+        transform: translateY(-848%);
+    }
+    72%{
+        transform: translateY(-1048%);
+    }
+    86%{
+        transform: translateY(-1248%);
+    }
+    100%{
+        transform: translateY(-1430%);
+    }
   }
 }
 
